@@ -1,0 +1,49 @@
+/* Halaman Laporan Stok */
+@keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+.animate-blink { animation: blink 1s infinite; }
+
+.card-alert {
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.card-alert:hover {
+transform: translateY(-8px); /* Mengangkat lebih tinggi sedikit */
+box-shadow: 0 12px 25px rgba(0,0,0,0.12) !important;
+}
+
+/* Efek khusus untuk kartu WhatsApp (Hitam) */
+.card-dark-hover {
+transition: all 0.3s ease;
+}
+
+.card-dark-hover:hover {
+transform: scale(1.02); /* Sedikit membesar agar tombol WA lebih menonjol */
+box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
+}
+
+/* Halaman Produk */
+
+    .img-container { position: relative; cursor: pointer; width: 85px; height: 85px; }
+    .img-container:hover img { opacity: 0.7; filter: brightness(70%); transition: 0.3s; }
+    .img-container::after { 
+        content: "\F232"; font-family: "bootstrap-icons"; position: absolute; 
+        top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; 
+        font-size: 1.5rem; opacity: 0; transition: 0.3s; 
+    }
+    .img-container:hover::after { opacity: 1; }
+    .cursor-pointer { cursor: pointer; }
+
+    /* ANIMASI BORDER MENYALA */
+    @keyframes glow-border {
+        0% { border-color: #dc3545; box-shadow: 0 0 5px #dc3545; }
+        50% { border-color: #ff0000; box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); border-width: 2px; }
+        100% { border-color: #dc3545; box-shadow: 0 0 5px #dc3545; }
+    }
+
+    .highlight-card {
+        border: 2px solid #dc3545 !important;
+        animation: glow-border 1.5s infinite !important;
+        scroll-margin-top: 120px;
+    }
+

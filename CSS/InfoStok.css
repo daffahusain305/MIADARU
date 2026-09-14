@@ -1,0 +1,62 @@
+
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+    }
+
+    /* Cards Top Alert */
+    .card-alert-habis {
+        border-left: 5px solid #ef4444 !important;
+        background: #ffffff;
+    }
+    .card-alert-restock {
+        border-left: 5px solid #f59e0b !important;
+        background: #ffffff;
+    }
+
+    /* Animasi Blink Badge Stock Habis */
+    .animate-blink {
+        animation: blinker 1.5s linear infinite;
+    }
+    @keyframes blinker {
+        50% { opacity: 0.5; }
+    }
+
+    /* Custom Table Scrollable Wrapper (Menampilkan ~8 Baris) */
+    .table-scrollable {
+        max-height: 390px;
+        overflow-y: auto;
+        position: relative;
+    }
+
+    /* Sticky Header agar Judul Tabel Tetap Terlihat Saat Discroll */
+    .table-scrollable table thead th {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    /* Custom Scrollbar */
+    .table-scrollable::-webkit-scrollbar {
+        width: 6px;
+    }
+    .table-scrollable::-webkit-scrollbar-track {
+        background: #f1f5f9;
+    }
+    .table-scrollable::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+    }
+    .table-scrollable::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+    }
+
+    /* Color Dot Indicator */
+    .color-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        border: 1px solid rgba(0,0,0,0.15);
+    }

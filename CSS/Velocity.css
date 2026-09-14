@@ -1,0 +1,31 @@
+
+    /* Efek untuk Kartu Gradient (Fast Moving) */
+.card-gradient-hover {
+    transition: all 0.3s ease;
+}
+.card-gradient-hover:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(240, 62, 62, 0.3) !important;
+    filter: brightness(1.1); /* Membuat warna gradient makin menyala */
+}
+
+/* Efek untuk Kartu Dark (Cold Storage) */
+.card-dark-modern-hover {
+    transition: all 0.3s ease;
+}
+.card-dark-modern-hover:hover {
+    transform: translateY(-8px);
+    background: #252930 !important; /* Warna sedikit lebih terang saat disentuh */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Efek untuk Kartu Dashed (Riwayat) */
+.card-dashed-hover {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.card-dashed-hover:hover {
+    border-color: #0d6efd !important; /* Warna garis berubah jadi biru */
+    background-color: #f8f9ff !important;
+    transform: translateY(-5px);
+}
